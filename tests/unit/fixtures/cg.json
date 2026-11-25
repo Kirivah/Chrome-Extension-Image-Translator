@@ -1,0 +1,50 @@
+{
+ "cg-1.png": {
+  "w": 960,
+  "h": 720,
+  "blocks": [
+   {
+    "id": 1,
+    "kind": "edged",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 34,
+    "chars": 44,
+    "box": [
+     839,
+     35,
+     935,
+     462
+    ]
+   },
+   {
+    "id": 2,
+    "kind": "edged",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 34,
+    "chars": 80,
+    "box": [
+     610,
+     46,
+     706,
+     521
+    ]
+   },
+   {
+    "id": 3,
+    "kind": "edged",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 34,
+    "chars": 60,
+    "box": [
+     124,
+     45,
+     220,
+     472
+    ]
+   }
+  ]
+ }
+}

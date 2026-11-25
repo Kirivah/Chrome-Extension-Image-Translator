@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>One page at a time</title>
+  <link rel="icon" href="data:,">
+  <style>
+    body { margin: 0; font: 15px system-ui, sans-serif; background: #111; color: #eee; }
+    main { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px; }
+    img { display: block; width: 560px; height: 720px; }
+  </style>
+</head>
+<body>
+  <main>
+    <img id="page" src="http://127.0.0.1:8702/pages/1.png" alt="page">
+    <button id="next" type="button">Next page</button>
+  </main>
+  <script>
+    let n = 1;
+    document.getElementById('next').addEventListener('click', () => {
+      n = Math.min(4, n + 1);
+      document.getElementById('page').src = `http://127.0.0.1:8702/pages/${n}.png`;
+    });
+  </script>
+</body>
+</html>

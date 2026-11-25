@@ -1,0 +1,381 @@
+{
+ "manga-8.png": {
+  "w": 800,
+  "h": 1000,
+  "blocks": [
+   {
+    "id": 1,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 6,
+    "text": "ステータス",
+    "box": [
+     152,
+     56,
+     278,
+     82
+    ]
+   },
+   {
+    "id": 2,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 10,
+    "text": "職業",
+    "box": [
+     70,
+     118,
+     122,
+     144
+    ]
+   },
+   {
+    "id": 3,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 9,
+    "text": "剣士",
+    "box": [
+     150,
+     118,
+     201,
+     144
+    ]
+   },
+   {
+    "id": 4,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 8,
+    "text": "攻撃",
+    "value": false,
+    "box": [
+     70,
+     178,
+     121,
+     204
+    ]
+   },
+   {
+    "id": 5,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 2,
+    "text": "12",
+    "value": true,
+    "box": [
+     152,
+     181,
+     181,
+     201
+    ]
+   },
+   {
+    "id": 6,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 8,
+    "text": "防御",
+    "value": false,
+    "box": [
+     231,
+     178,
+     281,
+     204
+    ]
+   },
+   {
+    "id": 7,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 2,
+    "text": "8",
+    "value": true,
+    "box": [
+     321,
+     181,
+     335,
+     201
+    ]
+   },
+   {
+    "id": 8,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 8,
+    "text": "魔力",
+    "value": false,
+    "box": [
+     70,
+     258,
+     120,
+     284
+    ]
+   },
+   {
+    "id": 9,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 2,
+    "text": "5",
+    "value": true,
+    "box": [
+     151,
+     261,
+     165,
+     281
+    ]
+   },
+   {
+    "id": 10,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 8,
+    "text": "速さ",
+    "value": false,
+    "box": [
+     230,
+     258,
+     279,
+     284
+    ]
+   },
+   {
+    "id": 11,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 2,
+    "text": "20",
+    "value": true,
+    "box": [
+     321,
+     261,
+     351,
+     281
+    ]
+   },
+   {
+    "id": 12,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 8,
+    "text": "器用",
+    "value": false,
+    "box": [
+     70,
+     299,
+     120,
+     324
+    ]
+   },
+   {
+    "id": 13,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 2,
+    "text": "15",
+    "value": true,
+    "box": [
+     152,
+     301,
+     181,
+     321
+    ]
+   },
+   {
+    "id": 14,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 8,
+    "text": "幸運",
+    "value": false,
+    "box": [
+     231,
+     298,
+     282,
+     324
+    ]
+   },
+   {
+    "id": 15,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 2,
+    "text": "3",
+    "value": true,
+    "box": [
+     321,
+     301,
+     335,
+     321
+    ]
+   },
+   {
+    "id": 16,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 7,
+    "text": "スタミナ",
+    "box": [
+     72,
+     218,
+     173,
+     244
+    ]
+   },
+   {
+    "id": 17,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 2,
+    "text": "40",
+    "value": true,
+    "box": [
+     185,
+     221,
+     216,
+     241
+    ]
+   },
+   {
+    "id": 18,
+    "kind": "field",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 9,
+    "text": "500ゴールド",
+    "box": [
+     151,
+     418,
+     299,
+     443
+    ]
+   },
+   {
+    "id": 19,
+    "kind": "caption",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 24,
+    "chars": 40,
+    "text": "見知らぬ場所で目を覚ました時",
+    "box": [
+     693,
+     69,
+     750,
+     243
+    ]
+   },
+   {
+    "id": 20,
+    "kind": "caption",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 24,
+    "chars": 36,
+    "text": "全てはもう始まっていた",
+    "box": [
+     608,
+     69,
+     666,
+     267
+    ]
+   },
+   {
+    "id": 21,
+    "kind": "sfx",
+    "polarity": "light",
+    "vertical": true,
+    "size": 64,
+    "chars": 6,
+    "text": "ドドン",
+    "box": [
+     187,
+     538,
+     252,
+     738
+    ]
+   },
+   {
+    "id": 22,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 8,
+    "text": "えっ…",
+    "box": [
+     689,
+     568,
+     710,
+     636
+    ]
+   },
+   {
+    "id": 23,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 30,
+    "text": "ここは どこなんだ 一体",
+    "box": [
+     540,
+     528,
+     639,
+     659
+    ]
+   },
+   {
+    "id": 24,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 24,
+    "text": "そうだね もう行こうか",
+    "box": [
+     474,
+     887,
+     627,
+     944
+    ]
+   }
+  ]
+ }
+}

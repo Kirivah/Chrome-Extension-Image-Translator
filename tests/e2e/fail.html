@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Image Translator failure cases</title>
+  <link rel="icon" href="data:,">
+  <style>
+    body { margin: 0; padding: 20px; font: 15px system-ui, sans-serif; background: #f4f4f4; }
+    img { display: block; margin: 0 0 30px; }
+  </style>
+</head>
+<body>
+  <img id="loop" src="http://127.0.0.1:8702/loop.png" width="640" height="360" alt="the first answer gets stuck">
+  <img id="refuse" src="http://127.0.0.1:8702/refuse.png" width="500" height="500" alt="never answered">
+  <img id="stubborn" src="http://127.0.0.1:8702/stubborn.png" width="700" height="300" alt="the answer always gets stuck">
+</body>
+</html>

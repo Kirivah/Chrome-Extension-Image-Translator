@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" style="overflow: hidden; height: 100%">
+<head>
+  <meta charset="utf-8">
+  <title>Image Translator scroll layouts</title>
+  <link rel="icon" href="data:,">
+  <style>
+    body { margin: 0; height: 100%; overflow-y: auto; font: 15px system-ui, sans-serif; background: #eee; }
+    .col { display: flex; flex-direction: column; align-items: center; gap: 40px; padding: 60px 0; }
+    #b-manga { border: 6px solid #333; padding: 4px 10px; background: #fff; }
+    .stage { position: relative; width: 700px; height: 560px; }
+    #b-moved { position: absolute; left: 40px; top: 30px; }
+    #b-shift { transform: translate(14px, 9px) scale(0.9); transform-origin: 20% 30%; }
+    #b-scoped { anchor-scope: all; }
+    #b-fixed { position: fixed; right: 16px; bottom: 16px; width: 300px; height: 200px; }
+    .sticky-box { height: 1400px; padding-left: 120px; }
+    #b-sticky { display: block; position: sticky; top: 20px; width: 450px; height: 300px; }
+    .spacer { height: 1600px; }
+  </style>
+</head>
+<body>
+  <div class="col">
+    <img id="b-manga" src="http://127.0.0.1:8702/manga.png" width="800" height="1200" alt="bordered, padded, centred">
+    <div class="stage"><img id="b-moved" src="http://127.0.0.1:8702/lazy.png" width="600" height="450" alt="moved by script"></div>
+    <img id="b-shift" src="http://127.0.0.1:8702/positioned.png" width="600" height="400" alt="transformed">
+    <img id="b-scoped" src="http://127.0.0.1:8702/dynamic.png" width="600" height="450" alt="can't be an anchor">
+  </div>
+  <img id="b-fixed" src="http://127.0.0.1:8702/hot/hotlink.png" alt="fixed in the corner">
+  <div class="sticky-box" id="sticky-box"><img id="b-sticky" src="/sign.jpg" alt="sticky"></div>
+  <div class="spacer"></div>
+</body>
+</html>

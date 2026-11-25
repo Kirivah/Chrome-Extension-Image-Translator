@@ -1,0 +1,154 @@
+{
+ "manga-6.png": {
+  "w": 800,
+  "h": 1200,
+  "blocks": [
+   {
+    "id": 1,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 28,
+    "chars": 26,
+    "group": "A",
+    "box": [
+     645,
+     99,
+     711,
+     212
+    ]
+   },
+   {
+    "id": 2,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 28,
+    "chars": 34,
+    "group": "A",
+    "box": [
+     508,
+     153,
+     614,
+     272
+    ]
+   },
+   {
+    "id": 3,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 28,
+    "chars": 4,
+    "group": "B",
+    "box": [
+     229,
+     105,
+     254,
+     157
+    ]
+   },
+   {
+    "id": 4,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 28,
+    "chars": 26,
+    "group": "B",
+    "box": [
+     144,
+     158,
+     212,
+     359
+    ]
+   },
+   {
+    "id": 5,
+    "kind": "caption",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 40,
+    "group": "C",
+    "box": [
+     288,
+     647,
+     350,
+     807
+    ]
+   },
+   {
+    "id": 6,
+    "kind": "caption",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 36,
+    "group": "C",
+    "box": [
+     123,
+     827,
+     184,
+     961
+    ]
+   },
+   {
+    "id": 7,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 28,
+    "chars": 16,
+    "box": [
+     494,
+     658,
+     560,
+     743
+    ]
+   },
+   {
+    "id": 8,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 28,
+    "chars": 14,
+    "box": [
+     655,
+     698,
+     722,
+     782
+    ]
+   },
+   {
+    "id": 9,
+    "kind": "open",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 10,
+    "box": [
+     715,
+     969,
+     740,
+     1047
+    ]
+   },
+   {
+    "id": 10,
+    "kind": "open",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 24,
+    "box": [
+     458,
+     1017,
+     520,
+     1176
+    ]
+   }
+  ]
+ }
+}

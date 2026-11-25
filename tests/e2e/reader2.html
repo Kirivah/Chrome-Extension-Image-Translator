@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>One page at a time, the next one loaded ahead</title>
+  <link rel="icon" href="data:,">
+  <style>
+    body { margin: 0; font: 15px system-ui, sans-serif; background: #111; color: #eee; }
+    main { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px; }
+    img { display: block; width: 560px; height: 720px; }
+  </style>
+</head>
+<body>
+  <main>
+    <img id="page" src="http://127.0.0.1:8702/pages/k7q2.png" alt="page">
+    <button id="next" type="button">Next page</button>
+  </main>
+  <script>
+    const files = ['k7q2', 'm3x9', 'z5c1'].map((n) => `http://127.0.0.1:8702/pages/${n}.png`);
+    let n = 0;
+    const preload = (i) => { if (i < files.length) new Image().src = files[i]; };
+    document.getElementById('page').addEventListener('load', () => preload(n + 1), { once: false });
+    document.getElementById('next').addEventListener('click', () => {
+      n = Math.min(files.length - 1, n + 1);
+      document.getElementById('page').src = files[n];
+    });
+  </script>
+</body>
+</html>

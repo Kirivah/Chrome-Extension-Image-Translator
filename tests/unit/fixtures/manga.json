@@ -1,0 +1,508 @@
+{
+ "manga-1.png": {
+  "w": 800,
+  "h": 1200,
+  "blocks": [
+   {
+    "id": 1,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 58,
+    "box": [
+     611,
+     77,
+     712,
+     269
+    ]
+   },
+   {
+    "id": 2,
+    "kind": "open",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 22,
+    "chars": 60,
+    "box": [
+     68,
+     237,
+     120,
+     319
+    ]
+   },
+   {
+    "id": 3,
+    "kind": "art",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 24,
+    "chars": 40,
+    "box": [
+     443,
+     43,
+     474,
+     174
+    ]
+   },
+   {
+    "id": 4,
+    "kind": "caption",
+    "polarity": "light",
+    "vertical": false,
+    "size": 30,
+    "chars": 34,
+    "box": [
+     60,
+     1071,
+     239,
+     1138
+    ]
+   },
+   {
+    "id": 5,
+    "kind": "sfx",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 74,
+    "chars": 6,
+    "box": [
+     257,
+     925,
+     397,
+     1014
+    ]
+   },
+   {
+    "id": 6,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 24,
+    "chars": 62,
+    "box": [
+     548,
+     568,
+     640,
+     790
+    ]
+   },
+   {
+    "id": 7,
+    "kind": "aside",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 15,
+    "chars": 12,
+    "box": [
+     717,
+     542,
+     738,
+     578
+    ]
+   },
+   {
+    "id": 8,
+    "kind": "art-light",
+    "polarity": "light",
+    "vertical": true,
+    "size": 26,
+    "chars": 14,
+    "box": [
+     699,
+     865,
+     731,
+     950
+    ]
+   }
+  ]
+ },
+ "manga-2.png": {
+  "w": 860,
+  "h": 1220,
+  "blocks": [
+   {
+    "id": 1,
+    "kind": "open",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 30,
+    "chars": 31,
+    "box": [
+     732,
+     59,
+     805,
+     243
+    ]
+   },
+   {
+    "id": 2,
+    "kind": "art",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 40,
+    "chars": 16,
+    "box": [
+     57,
+     69,
+     262,
+     117
+    ]
+   },
+   {
+    "id": 3,
+    "kind": "sfx",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 46,
+    "chars": 8,
+    "box": [
+     404,
+     365,
+     543,
+     440
+    ]
+   },
+   {
+    "id": 4,
+    "kind": "art",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 44,
+    "box": [
+     218,
+     603,
+     289,
+     798
+    ]
+   },
+   {
+    "id": 5,
+    "kind": "art",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 34,
+    "box": [
+     85,
+     863,
+     194,
+     1019
+    ]
+   },
+   {
+    "id": 6,
+    "kind": "sfx",
+    "polarity": "light",
+    "vertical": true,
+    "size": 54,
+    "chars": 6,
+    "box": [
+     764,
+     993,
+     822,
+     1168
+    ]
+   },
+   {
+    "id": 7,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 28,
+    "chars": 22,
+    "box": [
+     438,
+     988,
+     505,
+     1100
+    ]
+   }
+  ]
+ },
+ "manga-3.png": {
+  "w": 820,
+  "h": 1180,
+  "blocks": [
+   {
+    "id": 1,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 34,
+    "chars": 22,
+    "box": [
+     150,
+     130,
+     232,
+     269
+    ]
+   },
+   {
+    "id": 2,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 32,
+    "chars": 26,
+    "box": [
+     619,
+     133,
+     742,
+     235
+    ]
+   },
+   {
+    "id": 3,
+    "kind": "sfx",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 44,
+    "chars": 8,
+    "box": [
+     103,
+     529,
+     155,
+     719
+    ]
+   },
+   {
+    "id": 4,
+    "kind": "sfx",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 64,
+    "chars": 6,
+    "box": [
+     492,
+     799,
+     693,
+     889
+    ]
+   },
+   {
+    "id": 5,
+    "kind": "caption",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 28,
+    "chars": 30,
+    "box": [
+     642,
+     968,
+     748,
+     1081
+    ]
+   }
+  ]
+ },
+ "manga-4.png": {
+  "w": 860,
+  "h": 1320,
+  "blocks": [
+   {
+    "id": 1,
+    "kind": "open",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 34,
+    "chars": 14,
+    "box": [
+     61,
+     50,
+     190,
+     84
+    ]
+   },
+   {
+    "id": 2,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 30,
+    "chars": 34,
+    "box": [
+     525,
+     170,
+     715,
+     236
+    ]
+   },
+   {
+    "id": 3,
+    "kind": "caption",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 30,
+    "chars": 30,
+    "box": [
+     60,
+     284,
+     238,
+     351
+    ]
+   },
+   {
+    "id": 4,
+    "kind": "sfx",
+    "polarity": "light",
+    "vertical": false,
+    "size": 110,
+    "chars": 8,
+    "box": [
+     113,
+     545,
+     329,
+     668
+    ]
+   },
+   {
+    "id": 5,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 26,
+    "chars": 16,
+    "box": [
+     620,
+     673,
+     739,
+     699
+    ]
+   },
+   {
+    "id": 6,
+    "kind": "caption",
+    "polarity": "light",
+    "vertical": false,
+    "size": 36,
+    "chars": 30,
+    "box": [
+     81,
+     970,
+     246,
+     1051
+    ]
+   },
+   {
+    "id": 7,
+    "kind": "caption",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 34,
+    "chars": 16,
+    "box": [
+     496,
+     1160,
+     681,
+     1194
+    ]
+   }
+  ]
+ },
+ "manga-5.png": {
+  "w": 820,
+  "h": 1240,
+  "blocks": [
+   {
+    "id": 1,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 26,
+    "chars": 40,
+    "box": [
+     140,
+     88,
+     236,
+     211
+    ]
+   },
+   {
+    "id": 2,
+    "kind": "art",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 30,
+    "chars": 26,
+    "box": [
+     308,
+     71,
+     380,
+     161
+    ]
+   },
+   {
+    "id": 3,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 16,
+    "chars": 14,
+    "box": [
+     707,
+     416,
+     744,
+     461
+    ]
+   },
+   {
+    "id": 4,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": false,
+    "size": 30,
+    "chars": 22,
+    "box": [
+     98,
+     711,
+     318,
+     770
+    ]
+   },
+   {
+    "id": 5,
+    "kind": "sfx",
+    "polarity": "light",
+    "vertical": false,
+    "size": 96,
+    "chars": 6,
+    "box": [
+     474,
+     789,
+     753,
+     901
+    ]
+   },
+   {
+    "id": 6,
+    "kind": "bubble",
+    "polarity": "dark",
+    "vertical": true,
+    "size": 30,
+    "chars": 26,
+    "box": [
+     640,
+     946,
+     711,
+     1126
+    ]
+   },
+   {
+    "id": 7,
+    "kind": "caption",
+    "polarity": "light",
+    "vertical": false,
+    "size": 36,
+    "chars": 16,
+    "box": [
+     72,
+     1131,
+     248,
+     1165
+    ]
+   }
+  ]
+ }
+}
