@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Translator settings</title>
+  <link rel="stylesheet" href="../shared/ui.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="page">
+    <header class="head">
+      <div class="head-bubble">
+        <h1>Image Translator settings</h1>
+        <svg class="tail" viewBox="0 0 26 22" aria-hidden="true">
+          <polygon points="2,-3 24,-3 6,20" class="tail-fill"/>
+          <polyline points="2,0 6,20 24,0" class="tail-ink"/>
+        </svg>
+      </div>
+      <p class="saved" id="saved" role="status" aria-live="polite"></p>
+    </header>
+
+    <section class="panel" aria-labelledby="h-key">
+      <h2 id="h-key">Gemini API key</h2>
+      <p class="hint">Create a key at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a>.
+        It stays on this computer, in extension storage that websites and page scripts can’t read.</p>
+      <div class="key-row">
+        <input type="password" id="apiKey" autocomplete="off" spellcheck="false" placeholder="Paste your API key">
+        <button type="button" class="primary" id="saveKey">Save key</button>
+        <button type="button" id="testKey">Test key</button>
+      </div>
+      <p class="hint" id="keyStatus" role="status" aria-live="polite"></p>
+      <button type="button" class="link" id="removeKey" hidden>Remove saved key</button>
+    </section>
+
+    <section class="panel" aria-labelledby="h-model">
+      <h2 id="h-model">Model and spending</h2>
+      <div class="rows">
+        <label class="row"><span>Model</span>
+          <select id="model" data-key="model"></select></label>
+        <label class="row" id="customRow" hidden><span>Model ID</span>
+          <input type="text" id="customModel" data-key="customModel" spellcheck="false" placeholder="gemini-3.5-flash-lite"></label>
+        <fieldset class="row">
+          <legend>Google plan</legend>
+          <div class="choices">
+            <label><input type="radio" name="tier" value="free" data-key="tier"> Free tier</label>
+            <label><input type="radio" name="tier" value="paid" data-key="tier"> Billing enabled</label>
+            <p class="hint">Picking a plan fills in the limits below. The free tier allows few requests (for the Flash-Lite models about 15 a minute and 500 a day): images still get a request each while there’s room, and only a backlog shares requests. If Google reports a lower limit, the extension keeps to it.
+              Your project’s exact limits are in <a href="https://aistudio.google.com/rate-limit" target="_blank" rel="noopener">AI Studio</a>.</p>
+          </div>
+        </fieldset>
+        <label class="row"><span>Requests per minute</span>
+          <input type="number" min="1" max="10000" step="1" data-key="rpm"></label>
+        <label class="row"><span>Requests at the same time</span>
+          <input type="number" min="1" max="16" step="1" data-key="concurrency"></label>
+        <label class="row"><span>Images per request, at most</span>
+          <input type="number" min="1" max="6" step="1" data-key="batch"></label>
+        <label class="row"><span>Daily request cap</span>
+          <span class="with-hint"><input type="number" min="0" step="1" data-key="dailyRequests"><span class="hint">0 means no cap.</span></span></label>
+        <label class="row"><span>Daily spending cap (USD)</span>
+          <span class="with-hint"><input type="number" min="0" max="1000" step="0.05" data-key="dailyBudget"><span class="hint">Estimated from token counts. 0 means no cap.</span></span></label>
+        <label class="row check"><input type="checkbox" data-key="economy">
+          <span>Economy image detail<span class="hint">Sends a lower-detail view of each image, which roughly halves its input cost (more on 2.5 Flash-Lite). Small text may be missed.</span></span></label>
+        <label class="row check"><input type="checkbox" data-key="transcribe">
+          <span>Read the original text before translating<span class="hint">Slightly better translations; the model writes more, so each image costs a bit more and takes a little longer.</span></span></label>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="h-reading">
+      <h2 id="h-reading">Reading</h2>
+      <div class="rows">
+        <label class="row"><span>Translate to</span>
+          <select id="lang" data-key="lang"></select></label>
+        <label class="row"><span>Skip images smaller than (px)</span>
+          <input type="number" min="40" max="1000" step="10" data-key="minSide"></label>
+        <label class="row"><span>Translate ahead (screens)</span>
+          <span class="with-hint"><input type="number" min="0" max="5" step="0.5" data-key="prefetch"><span class="hint">Images this far below (or beside) the screen are translated before you reach them — and in readers that show one page at a time, the next pages. 0 turns this off.</span></span></label>
+        <label class="row"><span>Image size sent to Gemini</span>
+          <select data-key="maxSide">
+            <option value="1024">1024 px — faster upload</option>
+            <option value="1536">1536 px — balanced</option>
+            <option value="2048">2048 px — tiny text</option>
+          </select></label>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="h-look">
+      <h2 id="h-look">Lettering</h2>
+      <div class="rows">
+        <label class="row"><span>Font</span>
+          <input type="text" id="font" data-key="font" spellcheck="false"></label>
+        <label class="row check"><input type="checkbox" data-key="bold"><span>Bold lettering</span></label>
+        <label class="row check"><input type="checkbox" data-key="caps">
+          <span>Capital letters<span class="hint">Translations are set in capitals, as comics are lettered. Switch off for ordinary upper and lower case.</span></span></label>
+        <label class="row"><span>Speech-bubble detection</span>
+          <span class="with-hint">
+            <input type="range" min="0" max="1" step="0.05" data-key="sensitivity">
+            <span class="hint range-ends"><span>Strict: blur more often</span><span>Lenient: fill more often</span></span>
+          </span></label>
+      </div>
+      <p class="hint">Text on a plain background, like a speech bubble, is painted over in the bubble’s colour and relettered.
+        Text on artwork is erased and the translation is set in its place, in the original lettering’s colours with a solid outline.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="h-sites">
+      <h2 id="h-sites">Sites</h2>
+      <p class="hint">Turn sites on from the toolbar button. They’re translated automatically on every visit and reload.</p>
+      <ul class="sites" id="sites"></ul>
+      <label class="row check"><input type="checkbox" data-key="allSites">
+        <span>Translate on every site<span class="hint">Every large image on every page you open becomes a request. Keep a spending cap if you turn this on.</span></span></label>
+      <p class="hint alert" id="permHint" hidden>The browser hasn’t granted access to websites yet.
+        <button type="button" id="grant">Grant access</button>
+        <span class="perm-help" id="permHelp" hidden></span></p>
+    </section>
+
+    <section class="panel" aria-labelledby="h-cache">
+      <h2 id="h-cache">Saved translations</h2>
+      <p class="hint" id="cacheStats">Counting…</p>
+      <button type="button" id="clearCache">Clear saved translations</button>
+    </section>
+  </div>
+  <script type="module" src="options.js"></script>
+</body>
+</html>
