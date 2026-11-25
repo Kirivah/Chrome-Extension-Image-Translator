@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Image Translator",
+  "short_name": "Image Translator",
+  "version": "1.8.5",
+  "description": "Translates text inside images in place: reletters speech bubbles and text set over artwork. Uses your own Gemini API key.",
+  "minimum_chrome_version": "120",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Image Translator",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "background/index.js",
+    "type": "module"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "declarativeNetRequestWithHostAccess",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

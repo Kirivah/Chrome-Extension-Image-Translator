@@ -1,0 +1,18 @@
+{
+  "name": "image-translator-extension",
+  "version": "1.8.5",
+  "private": true,
+  "description": "Chrome extension that translates text inside images in place (Gemini).",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.content.json",
+    "test": "node --test tests/unit/*.test.mjs",
+    "test:e2e": "python3 tests/e2e/fixtures.py && node tests/e2e/run.mjs",
+    "build:font": "node tools/build-font.mjs",
+    "build:icons": "python3 tools/make-icons.py"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.5",
+    "typescript": "^7.0.2"
+  }
+}
